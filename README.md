@@ -1,54 +1,55 @@
-📚 Sistema de Empréstimo de Livros
-<div align="center">
-https://img.shields.io/badge/ASP.NET_Core-6.0-purple?style=for-the-badge&logo=dotnet
-https://img.shields.io/badge/SQL_Server-2019-blue?style=for-the-badge&logo=microsoft-sql-server
-https://img.shields.io/badge/Bootstrap-5.0-blueviolet?style=for-the-badge&logo=bootstrap
+# 📚 Sistema de Empréstimo de Livros  
 
-</div>
-Um sistema completo de gerenciamento de empréstimos de livros desenvolvido em ASP.NET Core MVC com autenticação de usuários e funcionalidades de CRUD.
+<div align="center">  
+<img src="https://img.shields.io/badge/ASP.NET_Core-6.0-purple?style=for-the-badge&logo=dotnet"/>  
+<img src="https://img.shields.io/badge/SQL_Server-2019-blue?style=for-the-badge&logo=microsoft-sql-server"/>  
+<img src="https://img.shields.io/badge/Bootstrap-5.0-blueviolet?style=for-the-badge&logo=bootstrap"/>  
+</div>  
 
-✨ Funcionalidades
-🔐 Autenticação e Autorização
-Registro de usuários com validação de dados
+Um sistema completo de gerenciamento de empréstimos de livros desenvolvido em **ASP.NET Core MVC** com autenticação de usuários, controle de sessões e funcionalidades de CRUD.  
 
-Sistema de login seguro com hash de senhas
+---
 
-Controle de sessões com middleware personalizado
+## ✨ Funcionalidades  
 
-Proteção de rotas para usuários autenticados
+### 🔐 Autenticação e Autorização  
+- Registro de usuários com validação de dados  
+- Login seguro com **hash de senhas (HMACSHA512)**  
+- Middleware personalizado para controle de sessões  
+- Proteção de rotas para usuários autenticados  
 
-📖 Gestão de Empréstimos
-CRUD completo de empréstimos de livros
+### 📖 Gestão de Empréstimos  
+- CRUD completo de empréstimos de livros  
+- Validações no cliente e servidor  
+- Interface responsiva com **Bootstrap 5**  
+- Listagem interativa com **DataTables**  
 
-Validações no cliente e servidor
+### 📊 Exportação de Dados  
+- Relatórios em Excel com **ClosedXML**  
+- Exportação de dados formatados  
+- Geração automática de planilhas  
 
-Interface responsiva com Bootstrap
+---
 
-Datatables para listagem interativa
+## 🛠️ Tecnologias Utilizadas  
 
-📊 Exportação de Dados
-Relatórios em Excel com ClosedXML
+| Tecnologia          | Finalidade                        |  
+|---------------------|----------------------------------|  
+| **ASP.NET Core 6.0** | Framework principal MVC           |  
+| **Entity Framework Core** | ORM e acesso a dados        |  
+| **SQL Server**      | Banco de dados relacional         |  
+| **Bootstrap 5**     | Framework CSS responsivo          |  
+| **ClosedXML**       | Geração de planilhas Excel        |  
+| **DataTables**      | Tabelas interativas               |  
+| **Newtonsoft.Json** | Serialização para sessões         |  
+| **HMACSHA512**      | Criptografia de senhas            |  
 
-Exportação de dados formatados
+---
 
-Geração automática de planilhas
+## 🏗️ Arquitetura e Padrões  
 
-🛠️ Tecnologias Utilizadas
-Tecnologia	Finalidade
-ASP.NET Core 6.0	Framework principal MVC
-Entity Framework Core	ORM e acesso a dados
-SQL Server	Banco de dados relacional
-Bootstrap 5	Framework CSS e design responsivo
-ClosedXML	Geração de planilhas Excel
-DataTables	Tabelas interativas
-Newtonsoft.Json	Serialização para sessões
-HMACSHA512	Criptografia de senhas
-🏗️ Arquitetura e Padrões
-🔧 Padrões de Projeto
-Injeção de Dependência (DI)
-
-Repository Pattern
-
-Service Pattern
-
-Data Transfer Objects (DTOs)
+### 🔧 Padrões de Projeto  
+- **Injeção de Dependência (DI)**  
+- **Repository Pattern**  
+- **Service Pattern**  
+- **Data Transfer Objects (DTOs)**  
