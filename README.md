@@ -1,88 +1,54 @@
 📚 Sistema de Empréstimo de Livros
+<div align="center">
+https://img.shields.io/badge/ASP.NET_Core-6.0-purple?style=for-the-badge&logo=dotnet
+https://img.shields.io/badge/SQL_Server-2019-blue?style=for-the-badge&logo=microsoft-sql-server
+https://img.shields.io/badge/Bootstrap-5.0-blueviolet?style=for-the-badge&logo=bootstrap
+
+</div>
 Um sistema completo de gerenciamento de empréstimos de livros desenvolvido em ASP.NET Core MVC com autenticação de usuários e funcionalidades de CRUD.
 
-🚀 Tecnologias e Ferramentas Utilizadas
-ASP.NET Core MVC - Framework principal
+✨ Funcionalidades
+🔐 Autenticação e Autorização
+Registro de usuários com validação de dados
 
-Entity Framework Core - ORM para acesso a dados
+Sistema de login seguro com hash de senhas
 
-SQL Server - Banco de dados
+Controle de sessões com middleware personalizado
 
-ClosedXML - Geração de planilhas Excel
-
-Bootstrap - Framework CSS para interface
-
-DataTables - Tabelas interativas
-
-Newtonsoft.Json - Serialização JSON para sessões
-
-HMACSHA512 - Criptografia de senhas
-
-📋 Funcionalidades Implementadas
-🔐 Sistema de Autenticação
-Registro de novos usuários com validação de dados
-
-Login com verificação de credenciais
-
-Hash de senhas com salt usando algoritmo HMACSHA512
-
-Controle de sessão de usuários
-
-Middleware de autorização para rotas protegidas
+Proteção de rotas para usuários autenticados
 
 📖 Gestão de Empréstimos
 CRUD completo de empréstimos de livros
 
-Cadastro com dados do recebedor, fornecedor e livro
-
-Edição e exclusão de registros
-
-Validação de dados no cliente e servidor
+Validações no cliente e servidor
 
 Interface responsiva com Bootstrap
 
+Datatables para listagem interativa
+
 📊 Exportação de Dados
-Geração de relatórios em Excel usando ClosedXML
+Relatórios em Excel com ClosedXML
 
-Exportação de todos os empréstimos cadastrados
+Exportação de dados formatados
 
-Formatação automática de planilhas
+Geração automática de planilhas
 
-🎨 Interface de Usuário
-Layouts diferentes para usuários logados e deslogados
+🛠️ Tecnologias Utilizadas
+Tecnologia	Finalidade
+ASP.NET Core 6.0	Framework principal MVC
+Entity Framework Core	ORM e acesso a dados
+SQL Server	Banco de dados relacional
+Bootstrap 5	Framework CSS e design responsivo
+ClosedXML	Geração de planilhas Excel
+DataTables	Tabelas interativas
+Newtonsoft.Json	Serialização para sessões
+HMACSHA512	Criptografia de senhas
+🏗️ Arquitetura e Padrões
+🔧 Padrões de Projeto
+Injeção de Dependência (DI)
 
-Mensagens de feedback com TempData
+Repository Pattern
 
-Validações visuais com Bootstrap
+Service Pattern
 
-Tabelas interativas com DataTables
-
-Design responsivo para diferentes dispositivos
-
-🧠 Conceitos Aplicados
-Padrões de Projeto
-Injeção de Dependência: Todos os serviços são injetados via construtor
-
-Repository Pattern: Separação clara entre camadas de acesso a dados
-
-Service Pattern: Lógica de negócio centralizada em classes de serviço
-
-DTOs (Data Transfer Objects): Para transferência segura de dados entre camadas
-
-Segurança
-Hash de senhas com salt único para cada usuário
-
-Sessões para manter autenticação
-
-Validação tanto no cliente quanto no servidor
-
-Proteção contra SQL Injection usando Entity Framework
-
-Arquitetura
-Separação de responsabilidades em controllers, services e data access
-
-Modelos de resposta padronizados com ResponseModel<T>
-
-Interfaces para definir contratos de serviços
-
-Migrations para controle de versão do banco de dados
+Data Transfer Objects (DTOs)
